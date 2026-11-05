@@ -17,18 +17,21 @@
 
         <ImageButton
             android:id="@+id/btnBookings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
             android:contentDescription="@string/bookings_page_button"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/baseline_home_24" />
 
         <ImageButton
             android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/home_page_button"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            app:srcCompat="@drawable/outline_add_notes_24" />
 
         <ImageButton
             android:id="@+id/btnRequests"
@@ -38,5 +41,17 @@
             android:contentDescription="requests_page_button"
             app:srcCompat="@drawable/ic_launcher_foreground" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="91dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
