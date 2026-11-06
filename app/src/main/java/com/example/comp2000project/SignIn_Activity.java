@@ -1,0 +1,40 @@
+package com.example.comp2000project;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class SignIn_Activity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_sign_in);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+        Button managerButton = findViewById(R.id.btnManager);
+
+        managerButton.setOnClickListener (v -> {
+            Intent intent = new Intent( SignIn_Activity.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        Button employeeButton = findViewById(R.id.btnEmployee);
+
+        employeeButton.setOnClickListener (v -> {
+            Intent intent = new Intent(SignIn_Activity.this, Employee_Main_Activity.class);
+            startActivity(intent);
+        });
+    }
+}

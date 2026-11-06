@@ -32,5 +32,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button requestButton = findViewById(R.id.btnBookings);
+
+        requestButton.setOnClickListener (v -> {
+            Intent intent = new Intent(MainActivity.this, Requests_Activity.class);
+            startActivity(intent);
+        });
+
     }
 }

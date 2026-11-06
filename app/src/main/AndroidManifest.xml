@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COMP2000Project">
         <activity
-            android:name=".MainActivity"
+            android:name=".SignIn_Activity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -25,6 +25,26 @@
             android:name=".Bookings_Activity"
             android:exported="false"
             android:theme="@style/Theme.COMP2000Project"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Requests_Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Employee_Requests_Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Employee_Main_Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Employee_Bookings_Activity"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
 
