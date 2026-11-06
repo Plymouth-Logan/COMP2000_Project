@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton bookButton = findViewById(R.id.btnBookings);
+        Button bookButton = findViewById(R.id.btnBookings);
 
         bookButton.setOnClickListener (v -> {
             Intent intent = new Intent(MainActivity.this, Bookings_Activity.class);

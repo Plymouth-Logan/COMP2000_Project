@@ -5,6 +5,12 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="make_a_booking">Make a Booking</string>
+    <string name="request_a_booking">Request a Booking</string>
+    <string name="manage_booking_requests">Manage Booking Requests</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="are_you_sure">Are You Sure?</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
