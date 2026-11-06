@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button requestButton = findViewById(R.id.btnBookings);
+        Button requestButton = findViewById(R.id.btnRequests);
 
         requestButton.setOnClickListener (v -> {
             Intent intent = new Intent(MainActivity.this, Requests_Activity.class);
