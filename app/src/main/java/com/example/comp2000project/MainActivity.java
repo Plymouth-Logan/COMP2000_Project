@@ -39,5 +39,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button signoutButton = findViewById(R.id.btn_signout_manager);
+
+        signoutButton.setOnClickListener (v -> {
+            Intent intent = new Intent(MainActivity.this, SignIn_Activity.class);
+            startActivity(intent);
+        });
+
     }
 }
