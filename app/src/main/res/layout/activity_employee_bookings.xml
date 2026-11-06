@@ -7,4 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".Employee_Bookings_Activity">
 
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Bookings"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No current bookings"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="11dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
